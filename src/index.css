@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 35% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 35% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 35% 10%;
+    --primary: 215 60% 22%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 18% 94%;
+    --secondary-foreground: 215 30% 20%;
+    --muted: 210 18% 94%;
+    --muted-foreground: 215 16% 50%;
+    --accent: 215 60% 22%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 215 60% 22%;
+    --radius: 0.625rem;
+
+    --navy: 215 60% 22%;
+    --navy-light: 215 60% 96%;
+    --navy-mid: 215 50% 35%;
+    --teal: 173 58% 36%;
+    --teal-light: 173 58% 94%;
+    --amber: 38 90% 48%;
+    --amber-light: 38 90% 94%;
+    --success: 142 60% 34%;
+    --success-light: 142 60% 94%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', 'Inter', sans-serif;
+  }
+}
+
+.font-dm { font-family: 'DM Sans', sans-serif; }
+.font-inter { font-family: 'Inter', sans-serif; }
